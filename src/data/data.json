@@ -1,0 +1,98 @@
+{
+  "Etudiants": [
+    {
+      "id": 1,
+      "nom": "Benzo",
+      "prenom": "Morales",
+      "email": "benzo020@gmail.com",
+      "password": "liverpool040",
+      "role": "etudiant",
+      "telephone": "775467805",
+      "age": 24,
+      "id_classe": 1,
+      "avatar": "src/uploads/profils/Screenshot_20211202-230312.jpg"
+    },
+    {
+      "id": 2,
+      "nom": "Dupont",
+      "prenom": "Jean",
+      "email": "dupont020@gmail.com",
+      "password": "password123",
+      "role": "etudiant",
+      "telephone": "123456789",
+      "age": 20,
+      "id_classe": 1,
+      "avatar": "src/uploads/profils/jean_dupont.jpg"
+    },
+    {
+      "id": 3,
+      "nom": "Martin",
+      "prenom": "Claire",
+      "email": "martin020@gmail.com",
+      "password": "12345abc",
+      "role": "etudiant",
+      "telephone": "987654321",
+      "age": 22,
+      "id_niveau": 1,
+      "id_classe": 2,
+      "id_filiere": 3,
+      "avatar": "src/uploads/profils/claire_martin.jpg"
+    }
+  ],
+  "Professeurs": [
+    {
+      "id": 1,
+      "nom": "Dubois",
+      "prenom": "Marie",
+      "email": "dubois@gmail.com",
+      "password": "teacher123",
+      "role": "teacher",
+      "telephone": "567891234",
+      "id_classes": [1, 2]
+    },
+    {
+      "id": 2,
+      "nom": "Lemoine",
+      "prenom": "Paul",
+      "email": "paulLemoine@gmail.com",
+      "password": "mathteach456",
+      "role": "teacher",
+      "telephone": "678901234",
+      "id_classe": 2,
+      "id_classes": [2, 3]
+    }
+  ],
+  "Classes": [
+    {
+      "id": 1,
+      "libelle": "Informatique"
+    },
+    {
+      "id": 2,
+      "libelle": "Mathématiques"
+    },
+    {
+      "id": 3,
+      "libelle": "Sciences"
+    },
+    {
+      "id": 4,
+      "libelle": "Espaces"
+    },
+    {
+      "id": 5,
+      "libelle": "Data Scientist"
+    }
+  ],
+  "Administrateurs": [
+    {
+      "id": 1,
+      "nom": "Admin",
+      "prenom": "System",
+      "email": "admin020@gmail.com",
+      "password": "admin123",
+      "role": "admin",
+      "telephone": "123123123"
+    }
+  ]
+}
