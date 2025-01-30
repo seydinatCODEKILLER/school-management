@@ -6,7 +6,7 @@
       "prenom": "Morales",
       "email": "benzo020@gmail.com",
       "password": "liverpool040",
-      "role": "etudiant",
+      "role": "student",
       "telephone": "775467805",
       "age": 24,
       "id_classe": 1,
@@ -18,7 +18,7 @@
       "prenom": "Jean",
       "email": "dupont020@gmail.com",
       "password": "password123",
-      "role": "etudiant",
+      "role": "student",
       "telephone": "123456789",
       "age": 20,
       "id_classe": 1,
@@ -30,7 +30,7 @@
       "prenom": "Claire",
       "email": "martin020@gmail.com",
       "password": "12345abc",
-      "role": "etudiant",
+      "role": "student",
       "telephone": "987654321",
       "age": 22,
       "id_niveau": 1,
@@ -91,7 +91,7 @@
       "prenom": "System",
       "email": "admin020@gmail.com",
       "password": "admin123",
-      "role": "admin",
+      "role": "administrator",
       "telephone": "123123123"
     }
   ]

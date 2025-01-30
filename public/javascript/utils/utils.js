@@ -1,3 +1,5 @@
+export const baseUrlViews = "src/views/";
+
 export function redirectUrl(path) {
   window.location.href = path;
 }
@@ -5,14 +7,14 @@ export function redirectUrl(path) {
 export function redirectUserPage(user) {
   const { role } = user;
   switch (role) {
-    case "etudiant":
-      redirectUrl("src/views/student.html");
+    case "student":
+      redirectUrl(`src/views/student.html`);
       break;
     case "teacher":
-      redirectUrl("src/views/teacher.html");
+      redirectUrl(`src/views/teacher.html`);
       break;
-    case "admin":
-      redirectUrl("src/views/administrator.html");
+    case "administrator":
+      redirectUrl(`src/views/administrator.html`);
       break;
     default:
       redirectUrl("/");

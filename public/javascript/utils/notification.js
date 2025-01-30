@@ -18,3 +18,17 @@ export function showNotification(message, type = "success") {
     setTimeout(() => notification.remove(), 300);
   }, 3000);
 }
+
+export function setNotification(message, type = "success") {
+  localStorage.setItem("notifications", JSON.stringify({ message, type }));
+}
+
+export function handleNotifications() {
+  const notificationData = JSON.parse(localStorage.getItem("notifications"));
+
+  if (notificationData) {
+    const { message, type } = notificationData;
+    showNotification(message, type);
+    localStorage.removeItem("notifications");
+  }
+}

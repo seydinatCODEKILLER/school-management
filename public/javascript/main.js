@@ -1,7 +1,9 @@
-import { loginUser } from "./utils/login.js";
+import { autoLogin, loginUser, logout } from "./utils/login.js";
+import { setNotification } from "./utils/notification.js";
 import { redirectUserPage } from "./utils/utils.js";
 
 document.addEventListener("DOMContentLoaded", () => {
+  autoLogin();
   const loginForm = document.getElementById("loginForm");
   loginForm.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -10,8 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const password = document.getElementById("password").value;
 
     const user = await loginUser(email, password);
+    console.log(user);
+
     if (user) {
-      console.log(user);
+      localStorage.setItem("currentUser", JSON.stringify(user));
+      setNotification(`Bienvenue, ${user.prenom} ${user.nom} !`, "success");
       redirectUserPage(user);
     }
   });
