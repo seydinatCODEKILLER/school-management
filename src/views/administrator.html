@@ -6,9 +6,27 @@
     <link rel="stylesheet" href="../../public/dist/output.css" />
     <title>Espace || Administrateur</title>
   </head>
-  <body class="h-screen">
+  <body class="h-screen flex flex-col justify-center items-center">
+    <h1 class="text-3xl font-bold">Espace adminstrateur</h1>
+    <div class="shadow-md rounded flex flex-col items-center justify-end p-3">
+      <img
+        id="avatar_admin"
+        alt="image"
+        class="w-52 h-52 rounded-full object-cover"
+      />
+      <div class="flex flex-col text-center font-medium mr-4">
+        <p class="" id="username"></p>
+        <p class="" id="email"></p>
+      </div>
+    </div>
+    <button
+      id="logoutButton"
+      class="px-3 py-2 border border-gray-200 text-gray-700 bg-gray-100 hover:bg-gray-200 rounded cursor-pointer mt-3"
+    >
+      <i class="ri-logout-box-r-line"></i>
+      <span>Deconnexion</span>
+    </button>
     <div id="notifications" class="fixed top-4 right-4 space-y-2"></div>
-    <button id="logoutButton" class="px-3 py-2 bg-red-500">decon</button>
     <script src="../../public/javascript/Admin/admin.js" type="module"></script>
   </body>
 </html>

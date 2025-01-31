@@ -78,7 +78,8 @@
       "email": "admin020@gmail.com",
       "password": "admin123",
       "role": "administrator",
-      "telephone": "123123123"
+      "telephone": "123123123",
+      "avatar": "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=400"
     }
   ],
   "Cours": [
