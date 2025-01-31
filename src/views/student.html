@@ -4,11 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../public/dist/output.css" />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css
+"
+      rel="stylesheet"
+    />
+
     <title>Espace || Etudiant</title>
   </head>
-  <body class="h-screen">
-    <button id="logoutButton" class="px-3 py-2 bg-red-500">decon</button>
+  <body class="h-screen relative">
+    <div class="shadow-md rounded flex items-center justify-end p-3">
+      <div class="flex flex-col font-medium mr-4">
+        <p class="" id="username"></p>
+        <p class="" id="email"></p>
+      </div>
+      <img
+        id="avatar_student"
+        alt="image"
+        class="w-14 h-14 rounded-full object-cover"
+      />
+    </div>
+    <div class="mt-3 mx-auto max-w-5xl z-20">
+      <h1 class="font-bold text-3xl">Bienvenue sur l'espace etudiant</h1>
+      <div
+        class="mt-7 grid grid-cols-3 gap-3 px-3 lg:px-0"
+        id="coursesContainer"
+      ></div>
+    </div>
+
     <div id="notifications" class="fixed top-4 right-4 space-y-2"></div>
+    <button
+      id="logoutButton"
+      class="px-3 py-2 border border-gray-200 text-gray-700 hover: bg-gray-100 rounded fixed bottom-4 cursor-pointer left-3"
+    >
+      <i class="ri-logout-box-r-line"></i>
+      <span>Deconnexion</span>
+    </button>
     <script
       src="../../public/javascript/Etudiant/etudiant.js"
       type="module"

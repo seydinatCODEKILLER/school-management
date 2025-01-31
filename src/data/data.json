@@ -10,7 +10,7 @@
       "telephone": "775467805",
       "age": 24,
       "id_classe": 1,
-      "avatar": "src/uploads/profils/Screenshot_20211202-230312.jpg"
+      "avatar": "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
       "id": 2,
@@ -21,22 +21,8 @@
       "role": "student",
       "telephone": "123456789",
       "age": 20,
-      "id_classe": 1,
-      "avatar": "src/uploads/profils/jean_dupont.jpg"
-    },
-    {
-      "id": 3,
-      "nom": "Martin",
-      "prenom": "Claire",
-      "email": "martin020@gmail.com",
-      "password": "12345abc",
-      "role": "student",
-      "telephone": "987654321",
-      "age": 22,
-      "id_niveau": 1,
       "id_classe": 2,
-      "id_filiere": 3,
-      "avatar": "src/uploads/profils/claire_martin.jpg"
+      "avatar": "src/uploads/profils/jean_dupont.jpg"
     }
   ],
   "Professeurs": [
@@ -65,23 +51,23 @@
   "Classes": [
     {
       "id": 1,
-      "libelle": "Informatique"
+      "libelle": "L1 Dev"
     },
     {
       "id": 2,
-      "libelle": "Mathématiques"
+      "libelle": "L1 Marketing"
     },
     {
       "id": 3,
-      "libelle": "Sciences"
+      "libelle": "L1 Design"
     },
     {
       "id": 4,
-      "libelle": "Espaces"
+      "libelle": "L2 Dev"
     },
     {
       "id": 5,
-      "libelle": "Data Scientist"
+      "libelle": "L2 Design"
     }
   ],
   "Administrateurs": [
@@ -93,6 +79,29 @@
       "password": "admin123",
       "role": "administrator",
       "telephone": "123123123"
+    }
+  ],
+  "Cours": [
+    {
+      "id": 1,
+      "id_classe": 2,
+      "id_prof": 1,
+      "id_eleve": [1, 2],
+      "libelle": "Design graphique"
+    },
+    {
+      "id": 2,
+      "id_classe": 1,
+      "id_eleve": [1],
+      "id_prof": 2,
+      "libelle": "Javascript"
+    },
+    {
+      "id": 3,
+      "id_classe": 1,
+      "id_eleve": [1],
+      "id_prof": 1,
+      "libelle": "HTML/CSS"
     }
   ]
 }
